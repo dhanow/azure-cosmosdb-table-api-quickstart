@@ -1,4 +1,4 @@
 {
-  "StorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=sridharcosmostable;AccountKey=C6iUsQsPWfpJRt1PhxJmaiZ1iRpbl0ZFtj8iu75hOzDcqoNYnfpiXA4OyUgq18GtyiarrW4lFmBCRMP1winDBw==;TableEndpoint=https://sridharcosmostable.table.cosmos.azure.com:443/;",
+  "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=sridharcosmostable;AccountKey=C6iUsQsPWfpJRt1PhxJmaiZ1iRpbl0ZFtj8iu75hOzDcqoNYnfpiXA4OyUgq18GtyiarrW4lFmBCRMP1winDBw==;TableEndpoint=https://sridharcosmostable.table.cosmos.azure.com:443/;",
   "TableName":  "SridharTable"
 }

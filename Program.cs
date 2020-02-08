@@ -12,13 +12,13 @@ namespace CosmosdbTableApiQuickstart
     class Program
     {
         //Connection String
-        private static string storageConnectionString; //Get the connection string from azure portal
+        private static string connectionnString; //Get the connection string from azure portal
 
         //Storage account
         private static CloudStorageAccount storageAccount; //extract the storage account from the connection string
 
         //Table name
-        private static string tableName = "SridharTable";
+        private static string tableName;
 
         public static async Task Main(string[] args)
         {
@@ -28,11 +28,11 @@ namespace CosmosdbTableApiQuickstart
 
                 //get the connection string from the settings file 
                 IConfigurationRoot configuration = new ConfigurationBuilder().AddJsonFile("Settings.json").Build();
-                storageConnectionString = configuration["StorageConnectionString"];
+                connectionnString = configuration["ConnectionString"];
                 tableName = configuration["TableName"];
 
                 // Retrieve storage account information from connection string.
-                storageAccount = CloudStorageAccount.Parse(storageConnectionString);
+                storageAccount = CloudStorageAccount.Parse(connectionnString);
 
                 // Create a table client for interacting with the table service
                 CloudTableClient tableClient = storageAccount.CreateCloudTableClient(new TableClientConfiguration());
